@@ -1,0 +1,314 @@
+:root {
+  /*  Primary */
+  --intro-email-sign-up-background: hsl(
+    217,
+    28%,
+    15%
+  ); /* intro and email sign up background */
+  --main-background: hsl(218, 28%, 13%); /* main background */
+  --footer-background: hsl(216, 53%, 9%); /* footer background */
+  --testimonials-background: hsl(219, 30%, 18%); /* testimonials background */
+  /* Accent */
+  --call-to-action-gradient-1: hsl(
+    176,
+    68%,
+    64%
+  ); /* inside call-to-action gradient */
+  --call-to-action-gradient-2: hsl(
+    198,
+    60%,
+    50%
+  ); /* inside call-to-action gradient */
+  --error: hsl(0, 100%, 63%); /*error*/
+}
+body {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-size: 14px; /*style-guide */
+  font-family: "Open Sans", sans-serif;
+}
+/* section 1 */
+.logo-nav {
+  position: relative;
+  display: grid;
+  place-items: center;
+  background-color: var(--intro-email-sign-up-background);
+}
+.container-1 {
+  position: relative;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  color: white;
+}
+.nav-list {
+  position: relative;
+  top: 10px;
+}
+.navigation-list {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  font-weight: normal;
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.644);
+}
+.navigation-list li:hover {
+  text-decoration: underline;
+  color: white;
+  font-weight: 700;
+}
+.navigation-list a {
+  text-decoration: none;
+  color: inherit;
+}
+.navigation-list li {
+  padding-left: 5px;
+}
+/* section 2*/
+.get-started {
+  position: relative;
+  padding-top: 70px;
+  color: white;
+  display: grid;
+  place-items: center;
+  background-color: var(--intro-email-sign-up-background);
+  line-height: 50px;
+  background-image: url(/week-4/Fylo-dark-theme-landing-page/images/bg-curvy-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 110% auto;
+}
+.container-2 {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 50%;
+  text-align: center;
+}
+.container-2 h1 {
+  font-family: "Raleway", sans-serif;
+}
+.into-image {
+  height: 300px;
+}
+.get-started-button {
+  color: white;
+  margin-top: 20px;
+  padding-left: 60px;
+  padding-right: 60px;
+  border-radius: 30px;
+  background-image: linear-gradient(
+    to right,
+    var(--call-to-action-gradient-1),
+    var(--call-to-action-gradient-2)
+  );
+  font-weight: 700;
+  margin-bottom: 100px;
+}
+/* section 3*/
+.icons {
+  position: relative;
+  padding-top: 10px;
+  color: white;
+  display: grid;
+  place-items: center;
+  background-color: var(--main-background);
+}
+.icons-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.icon-box {
+  margin: 30px;
+  height: 300px;
+  width: 400px;
+  display: grid;
+  grid-template-rows: auto 32px 100px;
+  place-items: center;
+  text-align: center;
+}
+.icon-box-h {
+  font-family: "Raleway", sans-serif;
+}
+/* section 4*/
+.stay-productive {
+  position: relative;
+  display: grid;
+  place-items: center;
+  background-color: var(--main-background);
+}
+.container-3 {
+  color: white;
+  position: relative;
+  display: flex;
+  width: 70%;
+  text-align: left;
+  place-items: center;
+}
+.stay-productive-text {
+  padding-left: 100px;
+  padding-right: 50px;
+}
+.stay-productive-text-h h1 {
+  font-size: 40px;
+  font-family: "Raleway", sans-serif;
+}
+.stay-productive-image {
+  height: 300px;
+}
+
+.linkFylo:hover {
+  text-decoration: underline;
+}
+/* section 5*/
+.testimonials {
+  padding-top: 70px;
+  padding-bottom: 350px;
+  position: relative;
+  display: grid;
+  place-items: center;
+  background-color: var(--main-background);
+}
+.quotes {
+  position: absolute;
+  bottom: 90%;
+  left: -2%;
+}
+.container-4 {
+  color: white;
+  position: relative;
+  display: flex;
+  width: 80%;
+  text-align: left;
+  justify-content: space-between;
+}
+.testimonials-box {
+  position: relative;
+  width: 30%;
+  background-color: var(--testimonials-background);
+  box-shadow: 4px 4px 2px 1px rgba(67, 67, 97, 0.2);
+}
+.testimonials-box-text {
+  font-size: 10px;
+  padding: 20px;
+}
+.recommender {
+  font-size: 8px;
+  padding-left: 20px;
+  display: flex;
+}
+.avtar-image {
+  border-radius: 50%;
+  width: 20px;
+  outline: 2px solid white;
+}
+.signture {
+  padding-left: 10px;
+}
+.signture div:first-child {
+  font-weight: bold;
+  font-size: 700;
+}
+/* section 6*/
+footer {
+  background-color: var(--footer-background);
+}
+.container-5 {
+  position: relative;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+.footer-logo-img {
+  height: 45x;
+  margin-left: 100px;
+  margin-bottom: 20px;
+}
+.footer-item {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  width: 85%;
+  margin: auto;
+}
+.box {
+  position: relative;
+  flex: 1;
+  text-align: left;
+}
+.location-box {
+  display: flex;
+  flex: 2;
+}
+.icon-text {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.about-us {
+  line-height: 20px;
+  margin-top: -20px;
+}
+.icon-social-networks {
+  padding-left: 10px;
+}
+/* section 7*/
+.get-early-access {
+  position: absolute;
+  bottom:85%;
+  color: white;
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+.container-6{
+  background-color: var(--intro-email-sign-up-background);
+  box-shadow: 4px 4px 2px 1px rgba(67, 97, 72, 0.2);
+  color: white;
+  position: relative;
+  width: 60%;
+  text-align: center;  
+  display: grid;
+  place-items: center;
+  padding-top: 30px;
+}
+.get-early-access-text{
+  position: relative;
+  width: 80%;
+}
+.get-early-access-mail-box{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 90%;
+  padding-bottom: 40px;
+  margin-top: 40px;
+}
+input:invalid   {
+  background-color: #eb8f8f9d;
+}
+.get-early-access-mail-box-email{
+  position: relative;
+  padding: 5px;
+  padding-left: 150px;
+  border-radius: 30px;
+  margin-right: 30px;
+}
+.get-early-access-mail-box-button{
+  color: white;
+  padding: 5px;
+  border-radius: 30px;
+  background-image: linear-gradient(
+    to right,
+    var(--call-to-action-gradient-1),
+    var(--call-to-action-gradient-2)
+  );
+  font-weight: 700;
+}
+h1{
+  font-family: "Raleway", sans-serif;
+}
